@@ -1,8 +1,7 @@
-
 // Java implementation of a producer and consumer
 // that use semaphores to control synchronization.
 
-import java.util.concurrent.Semaphore;
+import java.util.concurrent.Semaphore ;
 
 class Que {
 
@@ -90,12 +89,12 @@ class Consumer implements Runnable {
 }
 
 
-class prod_cons_semaphore {
+public class prod_cons_semaphore {
 
-     public static void main(String args[]) {
+     public static void main( String args[] ) {
 
      Que q = new Que();
- 
+
      new Consumer(q);
      new Producer(q);
 
